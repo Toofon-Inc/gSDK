@@ -252,10 +252,10 @@ protected:
     pthread_cond_t _condition;
 
     mavlink_system_t _system;
-    mavlink_system_t _gimbal = { 0 };
+    mavlink_system_t _gimbal = {0, 0};
     bool             _is_init = false;
 
-    mavlink_command_ack_t _ack = { 0 };
+    mavlink_command_ack_t _ack = {0, 0, 0, 0, 0, 0};
 
     attitude<float> _attitude;
 
